@@ -3,13 +3,15 @@
 This project is a study project about using gRPC with the Golang.
 We're going to have 4 different projects, one for each communication pattern:
 
-- Classic Client-Server Request-Response model
+- Classic Client-Server Request-Response model: `/request-response`
 - Unidirectional: Client Streaming
 - Unidirectional: Server Streaming
 - Bidirectional
 
 The project itself is going to be very simple: _We're going to sign up users._
 Also, we're going to use the same module and the same schema for the 4 projects, in order to decrease the LoC.
+
+Continue exploring this project by the CONTRIBUTING.md file, in the root directory, or accessing each one of the patterns implemented.
 
 ## Read more:
 
