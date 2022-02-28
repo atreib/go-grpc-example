@@ -14,7 +14,7 @@ That are some extension on VS Code that can ease your learning curve. They're op
 
 - `proto`: This directory persists all Protobuf schemas. Since we have the same use-case in all 4 approaches, we're using the same schema in all of them.
 - `pb`: This directory persists all the compiled Protobuf schemas. The schemas from the `proto` directory must be compiled, in order for us to use them in our source code.
-- `request-response`: Here we have the classic request-response pattern, using gRPC and Golang
+- `unary`: Here we have the Unary (classic request-response) pattern, using gRPC and Golang
 - `bidirectional`: Here we have the bidirectional pattern, using gRPC and Golang
 - `client-streaming`: Here we have the unidirectional pattern, streaming from the client to the server, using gRPC and Golang
 - `server-streaming`: Here we have the unidirectional pattern, streaming from the server to the client, using gRPC and Golang

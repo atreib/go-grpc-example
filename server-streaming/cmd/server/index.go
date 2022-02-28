@@ -5,7 +5,7 @@ import (
 	"net"
 
 	"github.com/atreib/go-grpc-example/pb"
-	"github.com/atreib/go-grpc-example/request-response/services"
+	"github.com/atreib/go-grpc-example/server-streaming/services"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )

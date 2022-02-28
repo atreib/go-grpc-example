@@ -9,6 +9,12 @@ message User {
     optional int32 age = 4;
 }
 
+message UserStream {
+    string status = 1;
+    User user = 2;
+}
+
 service UserService {
     rpc AddUser (User) returns (User);
+    rpc AddUserServerStream (User) returns (stream UserStream);
 }

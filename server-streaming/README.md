@@ -1,7 +1,7 @@
 # Request-response pattern
 
 This project uses the schema defined in the root (`/proto` and `/pb`) and is based in the same `go.mod` file (also in the root directory).
-Either way, this project implements a server using gRPC and Golang, with the classic client-server (request-response) pattern.
+Either way, this project implements a server using gRPC and Golang, with the Server Streaming pattern.
 
 # Directories
 
@@ -13,8 +13,8 @@ Either way, this project implements a server using gRPC and Golang, with the cla
 
 # Commands
 
-- To start the server: `go run ./request-response/cmd/server/index.go`
-- To start the client: `go run ./request-response/cmd/client/index.go`
+- To start the server: `go run ./server-streaming/cmd/server/index.go`
+- To start the client: `go run ./server-streaming/cmd/client/index.go`
 - To test the server using Evans: `evans -r repl --host localhost --port 50051`
 
 _Read the docs in the root's README to learn more about the project_

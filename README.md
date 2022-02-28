@@ -3,9 +3,9 @@
 This project is a study project about using gRPC with the Golang.
 We're going to have 4 different projects, one for each communication pattern:
 
-- Classic Client-Server Request-Response model: `/request-response`
+- Unary (classic Client-Server Request-Response model): `/unary`
 - Unidirectional: Client Streaming
-- Unidirectional: Server Streaming
+- Unidirectional: Server Streaming: `/server-streaming`
 - Bidirectional
 
 The project itself is going to be very simple: _We're going to sign up users._
