@@ -1,4 +1,6 @@
-# Request-response pattern
+# Server streaming pattern
+
+![Server streaming](../docs/img/server-streaming.png)
 
 This project uses the schema defined in the root (`/proto` and `/pb`) and is based in the same `go.mod` file (also in the root directory).
 Either way, this project implements a server using gRPC and Golang, with the Server Streaming pattern.

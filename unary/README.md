@@ -1,5 +1,7 @@
 # Unary pattern
 
+![Unary](../docs/img/unary.png)
+
 This project uses the schema defined in the root (`/proto` and `/pb`) and is based in the same `go.mod` file (also in the root directory).
 Either way, this project implements a server using gRPC and Golang, with the Unary (the classic client-server with request-response) pattern.
 
