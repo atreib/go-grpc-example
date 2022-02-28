@@ -3,6 +3,8 @@
 This project uses the schema defined in the root (`/proto` and `/pb`) and is based in the same `go.mod` file (also in the root directory).
 Either way, this project implements a server using gRPC and Golang, with the Unary (the classic client-server with request-response) pattern.
 
+Read more on my [Handbook](https://cloudy-marsupial-788.notion.site/Unary-example-e7c02f5fcbc94ef3a9b847a33fd7f3b2).
+
 # Directories
 
 - `cmd/client`: Files related to our client

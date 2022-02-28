@@ -3,7 +3,7 @@
 This project uses the schema defined in the root (`/proto` and `/pb`) and is based in the same `go.mod` file (also in the root directory).
 Either way, this project implements a server using gRPC and Golang, with the Server Streaming pattern.
 
-Read more on my [Handbook](https://cloudy-marsupial-788.notion.site/Server-streaming-example-0ca1237bc0294a0d883b750049066994).
+Read more on my [Handbook](https://cloudy-marsupial-788.notion.site/Client-streaming-example-576b69f2a5ef406787022f3996b21c1c).
 
 # Directories
 
@@ -15,8 +15,8 @@ Read more on my [Handbook](https://cloudy-marsupial-788.notion.site/Server-strea
 
 # Commands
 
-- To start the server: `go run ./server-streaming/cmd/server/index.go`
-- To start the client: `go run ./server-streaming/cmd/client/index.go`
+- To start the server: `go run ./client-streaming/cmd/server/index.go`
+- To start the client: `go run ./client-streaming/cmd/client/index.go`
 - To test the server using Evans: `evans -r repl --host localhost --port 50051`
 
 _Read the docs in the root's README to learn more about the project_
