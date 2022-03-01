@@ -6,7 +6,7 @@ We're going to have 4 different projects, one for each communication pattern:
 - Unary (classic Client-Server Request-Response model): `/unary`
 - Unidirectional: Client Streaming: `/client-streaming`
 - Unidirectional: Server Streaming: `/server-streaming`
-- Bidirectional
+- Bidirectional: `/bidirectional`
 
 The project itself is going to be very simple: _We're going to sign up users._
 Also, we're going to use the same module and the same schema for the 4 projects, in order to decrease the LoC.

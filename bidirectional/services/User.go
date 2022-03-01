@@ -101,3 +101,26 @@ func (*UserService) AddUserClientStream(stream pb.UserService_AddUserClientStrea
 		fmt.Println("Received user: ", req.GetName())
 	}
 }
+
+func (*UserService) AddUserBiStream(stream pb.UserService_AddUserBiStreamServer) error {
+	for {
+		req, err := stream.Recv()
+
+		if err == io.EOF {
+			return nil
+		}
+
+		if err != nil {
+			log.Fatalf("Error receiving client's stream: %v", err)
+		}
+
+		err = stream.Send(&pb.UserStream{
+			Status: "Added",
+			User:   req,
+		})
+
+		if err != nil {
+			log.Fatalf("Error sending response to the client: %v", err)
+		}
+	}
+}

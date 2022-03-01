@@ -15,11 +15,12 @@ message UserStream {
 }
 
 message Users {
-    repeated User users = 1;
+    repeated User Users = 1;
 }
 
 service UserService {
     rpc AddUser (User) returns (User);
     rpc AddUserServerStream (User) returns (stream UserStream);
     rpc AddUserClientStream (stream User) returns (Users);
+    rpc AddUserBiStream (stream User) returns (stream UserStream);
 }
